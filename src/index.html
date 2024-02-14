@@ -9,20 +9,39 @@
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" href="./sass/style.scss" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div>
-        <img
-          class="imagine"
-          src="./assets/images/homewallpaper.jpg"
-          alt="img"
-        />
+    <!-- Navbar with home image -->
+
+    <header>
+      <nav class="nav d-flex justify-content-around">
+        <img class="logo" src="./assets/images/logo.png" alt="" />
+        <ul class="d-flex">
+          <li><a href="">Home</a></li>
+          <li><a href="">Get In Touch</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <img
+        class="home-wallpaper"
+        src="./assets/images/homewallpaper.jpg"
+        alt="img"
+      />
+    </div>
+
+    <!-- Profile image with some introduction -->
+    <div class="container">
+      <div class="profile-image">
+        <img src="../public/assets/" alt="" />
       </div>
     </div>
 
     <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

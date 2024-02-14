@@ -1,0 +1,71 @@
+@import "./variables/variables";
+@import "./variables/fonts";
+@import "./variables/helpers";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.nav {
+  background: rgba(0, 0, 0, 0.699);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  transition: top 0.5s ease-in-out;
+}
+
+.nav.hide {
+  top: -100px;
+}
+
+.nav ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  align-self: center;
+}
+
+.nav li {
+  padding: 0 10px;
+}
+
+.nav a {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+}
+
+.nav a:hover {
+  background-color: transparent;
+  border: 2px solid lightgray;
+  color: 2px solid lightgray;
+}
+
+.home-wallpaper {
+  width: 100%;
+  max-height: 80rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border-color: yellow;
+}
+
+.logo {
+  max-width: 100px;
+}
